@@ -74,7 +74,6 @@ namespace TailSpin.SpaceGame.Web
             var count = _items.AsQueryable()
                 .Where(queryPredicate) // filter
                 .Count(); // count
-
             return Task<int>.FromResult(count);
         }
     }
